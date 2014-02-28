@@ -5,9 +5,17 @@ $(document).ready(function() {
 	initializePage();
 });
 
+$(".likeBtn").click(function() {
+	onClick();
+});
+
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	
+}
+
+function onClick(){
+	ga("send", "event", "like", "click");
 }
